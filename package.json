@@ -1,0 +1,40 @@
+{
+  "name": "mini-type-decorator",
+  "version": "1.0.0",
+  "description": "Type assertion decorator",
+  "license": "MIT",
+  "author": {
+    "name": "Vincent Weevers",
+    "email": "mail@vincentweevers.nl"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "babel-tape-runner test/*.js | tap-spec",
+    "build": "babel src.js -o index.js",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "introspect": "0.0.3",
+    "mini-type-assert": "~0.1.0",
+    "replace-constructor": "~1.0.0"
+  },
+  "devDependencies": {
+    "tape": "~4.3.0"
+  },
+  "keywords": [
+    "assert",
+    "decorator",
+    "type",
+    "typeof"
+  ],
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.0.0"
+  },
+  "repository": "vweevers/mini-type-decorator",
+  "bugs": "https://github.com/vweevers/mini-type-decorator/issues",
+  "homepage": "https://github.com/vweevers/mini-type-decorator"
+}
